@@ -29,43 +29,124 @@ html, body{
 }
 
 /* Mode */
-.mode{
-  margin: 50px 100px;
+.mode {
+  margin: 130px 300px 0px 300px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-#a2{
+#a2 {
   text-decoration: none;
+  background-color: black;
   color: orangered;
-  transition: 0.2s linear 0s;
+  padding: 10px 30px;
+  border-radius: 10px 10px 0px 0px;
 }
-#a1{
+#a1 {
+  margin-left: 30px;
   text-decoration: none;
   color: black;
+  transition: 0.2s linear 0s;
 }
 
-/* Animation and Others */
-a:focus{
-  color: orangered;
+/* Home */
+.home {
+  margin: 0px 300px;
+  background-color: black;
+  padding: 100px 50px;
+  border-radius: 10px 0px 10px 10px;
+}
+#homeBox {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  border-radius: 5px;
+  padding: 20px 30px;
+
+  margin-bottom: 80px;
+}
+#homeBox a {
+  text-decoration: none;
+  color: black;
+  cursor:cell;
+}
+#link{
+  height: 50px;
+  transition: 0.1s linear 0s;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+  padding: 50px;
 }
 
 /* Responsive~500px */
 @media (max-width:500px){
   /* Navbar */
-  .nav{
+  .nav {
     margin: 40px 30px;
   }
-  #navIcon{
+  #navIcon {
     font-size: x-large;
   }
 
   /* Mode */
-  .mode{
-    margin: 30px 30px;
+  .mode {
+    margin: 80px 30px 0px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
-  a{
+  a {
     font-size: small;
   }
+  #a1 {
+    padding: 10px 20px;
+  }
+
+  /* Home */
+  .home {
+    margin: 0px 30px;
+    background-color: black;
+    padding: 50px 30px;
+    border-radius: 10px 0px 10px 10px;
+  }
+  #homeBox {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+
+    margin-bottom: 50px;
+  }
+  #homeBoxT{
+    font-size: medium;
+  }
+  #link{
+    height: 40px;
+  }
+}
+
+/* Animations and others */
+h1::selection{
+  color: orangered;
+  background-color: black;
+}
+h2::selection{
+  color: orangered;
+}
+h3::selection{
+  color: orangered;
+}
+#link:hover{
+  transform: translateY(-5px);
+}
+h5::selection{
+  background-color: orangered;
 }

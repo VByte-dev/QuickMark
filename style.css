@@ -3,12 +3,13 @@
   font-family: oddval;
   src: url(stocks/fonts/OddvalText-SemiBold.ttf);
 }
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
-html, body{
+html,
+body {
   height: 100%;
   width: 100%;
 
@@ -16,56 +17,145 @@ html, body{
 }
 
 /* Navbar */
-.nav{
+.nav {
   text-align: center;
   background-color: black;
   border-radius: 10px;
   margin: 80px 100px;
   padding: 20px;
 }
-#navIcon{
+#navIcon {
   color: white;
   font-family: oddval;
 }
 
 /* Mode */
-.mode{
-  margin: 50px 100px;
+.mode {
+  margin: 130px 300px 0px 300px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-#a1{
+#a1 {
   text-decoration: none;
+  background-color: black;
   color: orangered;
+  padding: 10px 30px;
+  border-radius: 10px 10px 0px 0px;
 }
-#a2{
+#a2 {
+  margin-right: 30px;
   text-decoration: none;
   color: black;
   transition: 0.2s linear 0s;
 }
 
-/* Animation and Others */
-#a2:hover ~ #a1{
+/* Home */
+.home {
+  margin: 0px 300px;
+  background-color: black;
+  padding: 100px 50px;
+  border-radius: 0px 10px 10px 10px;
+}
+#homeBox {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  border-radius: 5px;
+  padding: 20px 30px;
+
+  margin-bottom: 80px;
+}
+#homeBox a {
+  text-decoration: none;
   color: black;
+  cursor: cell;
+}
+#link {
+  height: 50px;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+  padding: 50px;
 }
 
 /* Responsive~500px */
-@media (max-width:500px){
+@media (max-width: 500px) {
   /* Navbar */
-  .nav{
+  .nav {
     margin: 40px 30px;
   }
-  #navIcon{
+  #navIcon {
     font-size: x-large;
   }
 
   /* Mode */
-  .mode{
-    margin: 30px 30px;
+  .mode {
+    margin: 80px 0px 0px 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
-  a{
+  a {
     font-size: small;
   }
+  #a2 {
+    padding: 10px 20px;
+  }
+
+  /* Home */
+  .home {
+    margin: 0px 30px;
+    background-color: black;
+    padding: 50px 30px;
+    border-radius: 0px 10px 10px 10px;
+  }
+  #homeBox {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+
+    margin-bottom: 50px;
+  }
+  #homeBoxT {
+    font-size: medium;
+  }
+  #link {
+    height: 40px;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+  }
+}
+
+/* Animations and others */
+h1::selection{
+  color: orangered;
+  background-color: black;
+}
+h2::selection{
+  color: orangered;
+}
+h3::selection{
+  color: orangered;
+}
+#link:hover{
+  transform: translateY(-5px);
+}
+h5::selection{
+  background-color: orangered;
 }
