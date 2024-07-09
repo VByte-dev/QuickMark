@@ -1,0 +1,71 @@
+/* Fonts */
+@font-face {
+  font-family: oddval;
+  src: url(stocks/fonts/OddvalText-SemiBold.ttf);
+}
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+
+  font-family: oddval;
+}
+
+/* Navbar */
+.nav{
+  text-align: center;
+  background-color: black;
+  border-radius: 10px;
+  margin: 80px 100px;
+  padding: 20px;
+}
+#navIcon{
+  color: white;
+  font-family: oddval;
+}
+
+/* Mode */
+.mode{
+  margin: 50px 100px;
+  display: flex;
+  justify-content: space-around;
+}
+#a1{
+  text-decoration: none;
+  color: orangered;
+}
+#a2{
+  text-decoration: none;
+  color: black;
+  transition: 0.2s linear 0s;
+}
+
+/* Animation and Others */
+#a2:hover ~ #a1{
+  color: black;
+}
+
+/* Responsive~500px */
+@media (max-width:500px){
+  /* Navbar */
+  .nav{
+    margin: 40px 30px;
+  }
+  #navIcon{
+    font-size: x-large;
+  }
+
+  /* Mode */
+  .mode{
+    margin: 30px 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  a{
+    font-size: small;
+  }
+}
