@@ -1,0 +1,1 @@
+📌This project is a simple bookmarking site built using HTML and CSS. It serves as a practice project for learning web development fundamentals. The site allows users to manage bookmarks without the need for JavaScript, focusing on minimalist design and functionality.
